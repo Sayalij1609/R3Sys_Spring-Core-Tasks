@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ 
+ 
+ <bean class="com.r3sys.SpringCore.Student" name="Student1">
+ <property name="studentId" value="231107019"/>
+ <property name="studentName" value="Sayali Jadhav"/>
+ <property name="studentAddress" value="Kiran Society Shirpur"/>
+ </bean>
+ 
+
+ <bean class="com.r3sys.SpringCore.Student" name="student2">
+ <property name="list_1">
+ <list>
+ <value>1001</value>
+ <value>1002</value>
+ <value>1003</value>
+ <null/>
+ </list>
+ </property>
+ </bean>
+ 
+ 
+ <bean class="com.r3sys.SpringCore.Student" name="student3">
+ <property name="set_1">
+ <set>
+ <value>1001</value>
+ <value>1002</value>
+ <value>1003</value>
+ </set>
+ </property>
+ </bean>
+ 
+ 
+ 
+ 
+ <bean class="com.r3sys.SpringCore.Student" name="student4">
+ <property name="map_1">
+ <map>
+ <entry key="Java" value="Best"/>
+ <entry key="Python" value="Easy"/>
+ </map>
+ </property>
+ </bean>
+
+
+
+ </beans>
